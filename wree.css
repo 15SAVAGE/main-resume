@@ -1,0 +1,222 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes scaleUp {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.05);
+    }
+}
+.hidden {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    background: none;
+    z-index: 1000;
+}
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+nav a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+div {
+    animation: fadeIn 1s ease-in-out;
+}
+img {
+    transition: transform 0.3s ease-in-out;
+}
+
+
+
+.nav-text {
+    position: relative;
+    font-family: "Yatra One", serif;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    height: 40px;
+    display: flex;
+    align-items: center;
+    text-decoration: none; 
+    padding: 10px 20px;
+    border-radius: 10px; 
+    background-color: none; 
+    transition: 0.3s;
+}
+.nav-links {
+    background-color: rgba(0, 0, 0, 0.1); 
+    padding: 10px 20px; 
+    border-radius: 10px; 
+    display: flex;
+    gap: 10px; 
+}
+section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 24px;
+    flex-direction: column;
+}
+#home {
+    background-color: #fff;
+}
+.profile-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 20px;
+    border: 5px solid rgba(99, 99, 99, 0.532);
+}
+#about {
+    background-color: #e3e3e3;
+}
+#about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.about-img {
+width: 250px; 
+height: 250px; 
+border-radius: 50%; 
+object-fit: cover; 
+margin-top: 20px;
+border: 5px solid rgba(99, 99, 99, 0.532); 
+}
+
+#portfolio {
+    background-color: #d1d1d1;
+}
+
+
+#home-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+#home-content p {
+    font-size: 15px;
+    color: #555;
+    opacity: 60%;
+}
+.portfolio-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 35px; /* Расстояние между кнопками */
+    margin-top: 20px;
+}
+
+.portfolio-btn {
+    display: flex;
+    align-items: center; /* Выравнивание по вертикали */
+    gap: 20px; /* Расстояние между картинкой и текстом */
+    text-decoration: none; /* Убираем подчеркивание */
+    background: #fff;
+    padding: 10px 15px;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;  
+}
+
+.portfolio-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-btn img {
+width: auto;
+    height: auto;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.contact-section {
+    background-color: #f8f8f8;
+    padding: 50px;
+    text-align: center;
+}
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+.contact-form textarea {
+    height: 150px;
+}
+.contact-form input[readonly] {
+    background-color: #e0e0e0;
+    cursor: not-allowed;
+}
+.contact-form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+.contact-form button:hover {
+    background-color: #45a049;
+}
