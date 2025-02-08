@@ -151,15 +151,15 @@ border: 5px solid rgba(99, 99, 99, 0.532);
 .portfolio-buttons {
     display: flex;
     justify-content: center;
-    gap: 35px; /* Расстояние между кнопками */
+    gap: 35px; 
     margin-top: 20px;
 }
 
 .portfolio-btn {
     display: flex;
-    align-items: center; /* Выравнивание по вертикали */
-    gap: 20px; /* Расстояние между картинкой и текстом */
-    text-decoration: none; /* Убираем подчеркивание */
+    align-items: center;
+    gap: 20px; 
+    text-decoration: none;
     background: #fff;
     padding: 10px 15px;
     border-radius: 6px;
